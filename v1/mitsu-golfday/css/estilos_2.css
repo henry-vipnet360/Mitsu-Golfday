@@ -1,0 +1,837 @@
+/* Font Oficiales */
+
+@font-face {
+    font-family: 'HelveticaNeueBold';
+    src: url("../fonts/HelveticaNeueBold.eot");
+    src: url("../fonts/HelveticaNeueBold.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNeueBold.woff2") format("woff2"), url("../fonts/HelveticaNeueBold.woff") format("woff"), url("../fonts/HelveticaNeueBold.ttf") format("truetype"), url("../fonts/HelveticaNeueBold.svg#HelveticaNeueBold") format("svg");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'HelveticaNeueLight';
+    src: url("../fonts/HelveticaNeueLight.eot");
+    src: url("../fonts/HelveticaNeueLight.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNeueLight.woff2") format("woff2"), url("../fonts/HelveticaNeueLight.woff") format("woff"), url("../fonts/HelveticaNeueLight.ttf") format("truetype"), url("../fonts/HelveticaNeueLight.svg#HelveticaNeueLight") format("svg");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'HelveticaNeueMedium';
+    src: url("../fonts/HelveticaNeueMedium.eot");
+    src: url("../fonts/HelveticaNeueMedium.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNeueMedium.woff2") format("woff2"), url("../fonts/HelveticaNeueMedium.woff") format("woff"), url("../fonts/HelveticaNeueMedium.ttf") format("truetype"), url("../fonts/HelveticaNeueMedium.svg#HelveticaNeueMedium") format("svg");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* fin fonts oficiales */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'HelveticaNeueLight';
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+b,
+strong {
+    font-family: 'HelveticaNeueBold';
+}
+
+html,
+body {
+    font-family: 'HelveticaNeueLight';
+}
+
+body {
+    font-size: 16px;
+    background-color: #f6f6f6;
+}
+
+h1 {
+    font-size: 70px;
+}
+
+h2 {
+    font-size: 35px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+h4 {
+    font-size: 25px;
+}
+
+p,
+ul,
+li {
+    font-size: 17px;
+}
+
+li {
+    font-size: 16px;
+    line-height: 16px;
+    padding-bottom: 10px;
+}
+
+.texto-promo {
+    color: white;
+}
+
+.texto-promo .bajada {
+    font-size: 26px;
+}
+
+.prev-form {
+    color: #f00000;
+}
+
+.prev-form h3,
+.prev-form p:nth-child(4) {
+    color: #000;
+}
+
+.prev-form h3 {
+    font-size: 28px;
+    font-family: 'HelveticaNeueLight';
+}
+
+.volver-atras {
+    color: #f00000 !important;
+    font-weight: bold;
+    float: right;
+    padding-top: 15px;
+    font-family: 'HelveticaNeueBold';
+
+}
+
+.volver-atras::before {
+    content: "<";
+    padding-right: 5px;
+    color: #f00000 !important;
+    font-weight: bold;
+    font-family: cursive;
+}
+
+input {
+    text-transform: uppercase;
+}
+
+.pasos {
+    background-color: white;
+    margin-bottom: 80px;
+    padding-left: 20px;
+}
+
+.pasos h5 {
+    font-size: 16px;
+    color: #a1a1a1;
+    font-family: 'HelveticaNeueBold';
+    margin-bottom: 30px;
+
+}
+
+.pasos span {
+    font-size: 20px;
+    color: #f00000;
+    padding-right: 6px;
+    padding-left: 5px;
+    border-radius: 30px;
+    border: 2px solid #f00000;
+    font-family: 'HelveticaNeueBold';
+    margin-right: 15px;
+}
+
+.check-border {
+    border: solid 2px #7f7f7f;
+    display: flex;
+}
+
+.check-border input {
+    margin: 20px;
+}
+.check-border label a {
+    font-family: 'HelveticaNeueBold';
+}
+
+
+.check-border label {
+    font-size: 12px;
+}
+
+#parte-2 h6 {
+    color: black;
+}
+.fa{
+  vertical-align: middle;
+  font-size: 14px;
+}
+.errorRojo{
+  color:#ff0000;
+}
+/* Drag and drop */
+
+
+.dropzone.dz-clickable .dz-message {
+    cursor: pointer;
+    width: 200px;
+    border-style: dotted;
+    border-width: 4px;
+    height: 100px;
+    color: gray;
+}
+
+.dropzone {
+    min-height: auto;
+    border: none;
+    background: none;
+    padding: 0;
+}
+
+.dropzone .dz-preview .dz-details {
+    opacity: 1 !important;
+}
+
+.dz-preview.dz-processing.dz-error.dz-complete.dz-image-preview {
+    width: 100% !important;
+}
+
+#parte-2 {
+    display: none;
+}
+
+#parte-3 {
+    display: none;
+}
+
+#parte-4 {
+    display: none;
+}
+
+#parte-1.open {
+    display: block;
+}
+
+#parte-1.close {
+    display: none;
+}
+
+#parte-2.open {
+    display: block;
+}
+
+#parte-2.close {
+    display: none;
+}
+
+#parte-3.open {
+    display: block;
+}
+
+#parte-3.close {
+    display: none;
+}
+
+#parte-4.open {
+    display: block;
+}
+
+#parte-4.close {
+    display: none;
+}
+
+#parte-4 img {
+    margin: 0 auto;
+    display: block;
+    padding-top: 100px;
+}
+
+#parte-4 h5 {
+    display: block;
+    padding-top: 100px;
+    font-size: 50px;
+    text-align: center;
+}
+
+#form-principal #parte-4 p {
+    display: block;
+    padding-top: 50px;
+    font-size: 25px;
+    color: #606060;
+    font-family: 'HelveticaNeueBold';
+    text-align: center;
+}
+
+/* .dz-default.dz-message {
+display: none;
+} */
+
+
+/* Navegación */
+
+
+.navbar-brand img {
+    width: 50%;
+    margin: 12px 0;
+}
+
+/* header  */
+
+.img-product-top {
+    width: 75%;
+}
+
+button.btn,
+.cta-2.btn,
+.cta-1.btn {
+    padding: 10px 15px 10px 15px !important;
+}
+
+.btn-danger:hover {
+    background-color: #f00000 !important;
+    color: #fff !important;
+}
+
+.header-principal {
+    background-color: #f00000;
+    padding: 70px;
+    background: url(/img/header.png) center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header-principal h1 {
+    font-family: 'HelveticaNeueLight';
+
+}
+
+.promo-cta h3,
+.contenido-1>p:nth-child(1),
+.contenido-1>p:nth-child(4) {
+    text-transform: uppercase;
+    font-size: 1.1rem;
+}
+
+.btn {
+    border-radius: 0px;
+    font-size: 19px;
+}
+
+.btn-danger {
+    color: white;
+    background-color: #7f7f7f !important;
+    border-color: #7f7f7f !important;
+    border-radius: 10px;
+    min-width: 200px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-family: 'HelveticaNeueBold';
+
+}
+
+.btn-danger-principal {
+    color: #f00000;
+    background-color: #fff !important;
+    border-color: transparent !important;
+    border-radius: 10px;
+    min-width: 200px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-family: 'HelveticaNeueBold';
+    border: solid 5px #fff !important;
+
+
+}
+
+.btn-danger-principal:hover {
+    background-color: #f00000 !important;
+    color: #fff;
+
+}
+
+.rojo {
+    color: #ff0000;
+    padding-left: 20px;
+    font-weight: 900;
+}
+
+
+.backError {
+    border: solid 1px #ff0000;
+}
+
+
+
+/* contacta con nosotros  */
+
+.contacta-con-nosotros {
+    background-color: white;
+    color: gray;
+}
+
+.contenido-1 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.fondo-item a {
+    color: #1c1c1c;
+    font-family: 'HelveticaNeueMedium';
+}
+
+.form-control {
+    margin: 0px;
+    font-weight: bold;
+}
+
+/* pasos promo */
+
+.fondo-item {
+    padding-bottom: 250px;
+}
+
+.img-service {
+    width: 85px;
+
+}
+
+.fondo-item img {
+    padding-bottom: 30px;
+}
+
+.footer_test-movil {
+    display: none;
+}
+
+a {
+    color: #fd0d0d;
+    text-decoration: none;
+}
+
+/* service  */
+.services .itemservices figure {
+    align-items: center;
+    background: #000;
+    border-radius: 65px;
+    display: flex;
+    height: 130px;
+    justify-content: center;
+    margin: 70px auto 0;
+    transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+    width: 130px;
+}
+
+.services .itemservices figure img {
+    height: 65px;
+    margin-top: 1px;
+    transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+    width: auto;
+}
+
+.moved {
+    transform: translate(25vw, 30vh);
+    background-color: #e7e7e7;
+    height: 50vh;
+    position: absolute;
+    width: 72vw;
+}
+
+/* css beneficios */
+
+.wp-block-group {
+    box-sizing: border-box;
+}
+
+.beneficiosclave {
+    padding: 0px 0 50px;
+}
+
+.titulobeneficiosclave {
+    padding: 50px 0;
+    background-color: #e1e0e0;
+    color: #f00000;
+    padding-left: 100px;
+    margin-top: 230px;
+}
+
+.slidemaster {
+    padding-top: 90px;
+}
+
+.beneficiosclave .wp-block-group__inner-container {
+    padding: 25px 35px 0;
+}
+
+.beneficiosclave .wp-block-group__inner-container h2 {
+    color: #000;
+    font-size: 30px;
+    padding-left: 35px;
+    text-align: left;
+}
+
+.wp-block-columns {
+    display: flex;
+    margin-bottom: 1.75em;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+
+.wp-block-column {
+    flex-grow: 1;
+    min-width: 0;
+    word-break: break-word;
+    overflow-wrap: break-word;
+}
+
+.beneficiosclave .itembeneficiosclave {
+    height: 270px;
+    position: relative;
+}
+
+.beneficiosclave .itembeneficiosclave figure {
+    align-items: center;
+    border-radius: 65px;
+    display: flex;
+    height: 130px;
+    justify-content: center;
+    margin: 70px auto 0;
+    transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+    width: 130px;
+}
+
+.beneficiosclave .itembeneficiosclave h3 {
+    color: #000;
+    display: block;
+    font-size: 16px;
+    opacity: 0;
+    position: absolute;
+    text-align: center;
+    top: 12px;
+    transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+    width: 100%;
+}
+
+.beneficiosclave .itembeneficiosclave p {
+    color: #000;
+    display: block;
+    line-height: 22px;
+    opacity: 0;
+    padding: 0 20px;
+    position: absolute;
+    top: 60px;
+    transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+}
+
+.beneficiosclave .itembeneficiosclave figure img {
+    height: 65px;
+    margin-top: 1px;
+    transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+    width: auto;
+}
+
+.beneficiosclave .itembeneficiosclave figure img {
+    height: auto;
+    margin-top: 1px;
+    transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+    width: auto;
+}
+
+.wp-block-image img {
+    max-width: 100%;
+}
+
+.beneficiosclave .itembeneficiosclave:hover figure {
+    align-items: start;
+    border-radius: 0;
+    height: 270px;
+    margin: 0 auto 0;
+    width: 100%;
+    border: solid #f00000;
+}
+
+.beneficiosclave .itembeneficiosclave:hover figure img {
+    margin-top: 35px;
+}
+
+.beneficiosclave .itembeneficiosclave:hover figure img {
+    display: none;
+}
+
+.beneficiosclave .itembeneficiosclave:hover h3 {
+    opacity: 1;
+}
+
+.beneficiosclave .itembeneficiosclave:hover p {
+    opacity: 1;
+}
+
+.formulariocontacto .boxformulario {
+    background-color: #e7e7e7;
+    margin-bottom: 80px;
+    padding: 0 100px 100px 100px;
+}
+
+.boxformulario-cabecera {
+    background-color: #e7e7e7;
+    margin-top: 80px;
+    color: white;
+}
+
+.cabecera-form {
+    background-color: #f00000;
+    height: 60px;
+    display: flex;
+    align-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.formulariocontacto .boxformulario h4 {
+    color: #fff;
+    padding-top: 9px;
+}
+
+.formulariocontacto .boxformulario h5 {
+    color: #f00000;
+    padding-top: 50px;
+}
+
+.formulariocontacto .boxformulario p {
+    padding-bottom: 50px;
+    font-size: 11px;
+}
+
+.form-label {
+    padding-top: 20px;
+    font-weight: bold;
+    color: #a1a1a1;
+}
+
+input.btn.btn-danger.btn-MD.cta-2.m-4 {
+    float: right;
+}
+
+#form-principal {
+    margin-top: 0px;
+    display: none;
+}
+
+#form-principal.open {
+    display: block;
+}
+
+#form-principal p {
+    color: #000;
+}
+
+/* slide */
+
+.slick-prev:before,
+.slick-next:before {
+    color: black;
+}
+
+
+.slick-dots li button:before {
+    font-size: 20px;
+    color: #000;
+}
+
+.slick-dots li.slick-active button:before {
+    opacity: 1;
+    color: #f00000;
+}
+
+.slick-dotted.slick-slider {
+    margin-bottom: 200px;
+}
+
+footer .links p {
+    font-size: 12px;
+    color: #f00000;
+}
+
+ul.slick-dots {
+    bottom: -100px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    font-size: 50px;
+}
+
+/* fin slide */
+
+@media (min-width: 782px) {
+    .wp-block-columns {
+        flex-wrap: nowrap;
+    }
+
+    .wp-block-column {
+        flex-basis: 0;
+        flex-grow: 1;
+    }
+
+    .wp-block-column:not(:first-child) {
+        margin-left: 2em;
+    }
+
+    .beneficiosclave .itembeneficiosclave {
+        width: 100%;
+    }
+
+    .moved {
+        transform: translate(25vw, 25vh);
+        background-color: #e7e7e7;
+        height: 31vh;
+        position: absolute;
+        width: 74vw;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    .texto-promo .bajada {
+        font-size: 20px;
+    }
+
+    .formulariocontacto .boxformulario {
+        padding: 0 98px 107px 31px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .moved {
+        transform: translate(25vw, 52vh);
+        background-color: #e7e7e7;
+        height: 31vh;
+        position: absolute;
+        width: 72vw;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    .texto-promo .bajada {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 1900px) {
+    .moved {
+        transform: translate(25vw, 38vh);
+        height: 31vh;
+        width: 74vw;
+    }
+}
+
+
+@media (max-width: 781px) {
+    .beneficiosclave .itembeneficiosclave {
+        width: 100%;
+    }
+
+    .formulariocontacto .boxformulario {
+        padding: 54px;
+    }
+
+    .titulobeneficiosclave {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .container-fluid.formulariocontacto {
+        padding: 0px;
+    }
+
+    .slick-next {
+        right: 25px;
+    }
+
+    .slick-prev {
+        left: 25px;
+    }
+
+    .slick-dotted.slick-slider {
+        margin-bottom: 0px;
+        margin-top: 0;
+    }
+
+    ul.slick-dots {
+        bottom: 50px;
+    }
+
+    button.slick-next.slick-arrow {
+        top: 180px;
+        z-index: 9999;
+    }
+
+    button.slick-prev.slick-arrow {
+        top: 180px;
+        z-index: 9999;
+    }
+
+    .slick-dots li button:before {
+        top: 70px;
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+
+    .moved {
+        display: none;
+    }
+
+    .titulobeneficiosclave {
+        margin-top: 0px;
+    }
+
+    .titulobeneficiosclave {
+
+        margin-top: 100px;
+    }
+
+    .slick-list.draggable {
+        height: 200px;
+    }
+
+    .texto-promo .bajada {
+        font-size: 16px;
+    }
+
+    input#mostrar {
+        font-size: 14px;
+    }
+
+    body>main>div.wp-block-group.beneficiosclave>div>div:nth-child(3)>div:nth-child(3) {
+        display: none;
+    }
+
+    body>main>div.wp-block-group.beneficiosclave>div>div:nth-child(3)>div:nth-child(4) {
+        display: none;
+    }
+
+    .form-control {
+        margin: 5px;
+    }
+}

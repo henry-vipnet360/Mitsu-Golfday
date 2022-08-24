@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://use.fontawesome.com/5953a9e96d.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/dropzone@5/dist/min/dropzone.min.css" type="text/css" />
+  <link href="https://code.jquery.com/ui/1.13.0/themes/smoothness/jquery-ui.css" rel="stylesheet" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+
+  <link rel="stylesheet" href="css/estilos.css">
+  <title>Landing Lead Generation</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid text-center">
+        <div class="col col-md-auto col-lg-2 pl-0">
+          <a class="navbar-brand" href="#comenzar">
+            <img src="img/logo_mitsubishi.png" alt="Logo" width="100%" class="d-inline-block align-text-top">
+          </a>
+
+        </div>
+        <span class="logo-2"> <img src="img/logo_2.png" alt="Logo" width="65%" class="d-inline-block align-text-top">
+        </span>
+        <div class="col col-md pr-0 pr-lg-3">
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <div class="container-fluid header-principal">
+      <div class="row g-0">
+        <div class="">
+
+          <a href="#Registrate">
+            <img class="header-pc" src="img/header.jpg" alt="" style="width: 100%;">
+            <img class="header-movil" src="img/header.jpg" alt="" style="width: 100%;">
+          </a>
+          <a href="#eng" style=" position: absolute; top: 400px; right: 40px; "><img class="icon-eng"
+              src="img/icon_eng.svg" alt="" style="width: 80px"></a>
+
+
+        </div>
+
+      </div>
+    </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row g-0">
+        <div class="col-12 col-md-6 offset-md-3 text-center pt-5 prev-form">
+          <h2>¡Bienvenidos al Golf Day con
+            Miguel Ángel Jiménez!</h2>
+
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Formulario -->
+    <div class="container-fluid formulariocontacto open" id="form-principal">
+
+      <div class="row g-0">
+
+        <div class="col-12 col-md-10 offset-md-1 boxformulario-cabecera" id="registrarme">
+
+          <div class="cabecera-form">
+            <h4>COMPLETA TUS DATOS</h4>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row g-0">
+
+        <div class="col-md-4 offset-md-1 pasos pt-5">
+          <h5 class="step-1"><span>1</span>DATOS PERSONALES</h5>
+          <h5 class="step-2"><span>2</span>DATOS PARA EL VIAJE</h5>
+          <h5 class="step-3"><span>3</span>CONFIRMACIÓN</h5>
+        </div>
+
+        <div class="col-md-6 boxformulario">
+
+          <form action="/file-upload" enctype="multipart/form-data" method="post">
+            <!--  Form Parte 1  -->
+            <div id="parte-1">
+              <span class="volver-atras" id="atras-1" position="1">Volver atrás</span>
+              <h5 class="">Datos Personales*</h5>
+              <p class=""><strong>*Todos los campos son obligatorios.</strong></p>
+
+              <div class="row g-0">
+                <div class="col-md-6 mb-3 p-3">
+                  <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+                  <div id="nombre" class="spanError">
+                  </div>
+                  <input id="inputNombre" type="text" class="form-control nombre" placeholder="" name="nombre">
+                </div>
+                <div class="col-md-6 mb-3 p-3">
+                  <label for="exampleFormControlInput1" class="form-label">Apellido</label>
+                  <div id="nombre" class="spanError">
+                  </div>
+                  <input id="inputNombre" type="text" class="form-control nombre" placeholder="" name="nombre">
+                </div>
+                <div class="col-md-7 mb-3 p-3">
+                  <label for="exampleFormControlInput1" class="form-label">Dirección de correo electrónico </label>
+                  <div id="email" class="spanError">
+                  </div>
+                  <input id="inputEmail" type="email" class="form-control email" placeholder="" name="email">
+                </div>
+                <div class="col-md-4 mb-3 p-3">
+                  <label for="exampleFormControlInput1" class="form-label">Teléfono</label>
+                  <div id="telefono" class="spanError">
+                  </div>
+                  <input id="inputTelefono" type="number" class="form-control telefono" placeholder="" name="telefono">
+                </div>
+                <div class="col-md-7 mb-3 p-3">
+                  <label for="exampleFormControlInput1" class="form-label">Nombre de la empresa </label>
+                  <div id="email" class="spanError">
+                  </div>
+                  <input id="inputEmail" type="email" class="form-control email" placeholder="" name="email">
+                </div>
+                <div class="col-md-4 mb-3 p-3">
+                  <label for="exampleFormControlInput1" class="form-label">Sede/País</label>
+                  <div id="telefono" class="spanError">
+                  </div>
+                  <input id="inputTelefono" type="number" class="form-control telefono" placeholder="" name="telefono">
+                </div>
+                <div class="col-md-7 mb-3 p-3">
+                  <label for="exampleFormControlInput1" class="form-label">Número de Licencia Golf </label>
+                  <div id="email" class="spanError">
+                  </div>
+                  <input id="inputEmail" type="email" class="form-control email" placeholder="" name="email">
+                </div>
+                <div class="col-md-4 mb-3 p-3">
+                  <label for="exampleFormControlInput1" class="form-label">Hándicap</label>
+                  <div id="telefono" class="spanError">
+                  </div>
+                  <input id="inputTelefono" type="number" class="form-control telefono" placeholder="" name="telefono">
+                </div>
+
+                <div class="col-md-7 mb-3 p-3">
+                  <label for="exampleFormControlInput1" class="form-label">Talla para el polo personalizado </label>
+
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected>Seleccione su talla</option>
+                    <option value="1">XL</option>
+                    <option value="2">L</option>
+                    <option value="3">M</option>
+                    <option value="4">S</option>
+                  </select>
+
+                  <div id="talla-polo" class="spanError">
+                  </div>
+                </div>
+
+                <div class="col-md-12 mb-3 p-3">
+                  <label for="exampleFormControlInput1" class="form-label" style=" width: 100%;">Intolerancias y
+                    alergias</label>
+
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Si (especificar)
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <label class="form-check-label" for="flexCheckChecked">
+                      No
+                    </label>
+                  </div>
+
+                  <input id="inputIntolerancia" type="number" class="form-control telefono" placeholder=""
+                    name="intolerancia">
+
+
+                  <div id="intolerancia" class="spanError">
+                  </div>
+                </div>
+
+
+                <div class="col-md-10 mb-4 check-border">
+                  <input id="inputChkPoliticas" type="checkbox" name="chkPoliticas">
+                  <label for="">He leído, y CONSIENTO que MITSUBISHI ELECTRIC pueda enviarme comunicaciones
+                    comerciales tal y como se describe en la <a href="#">Política de Privacidad</a></label>
+                </div>
+
+              </div>
+
+              <div class="col-md-8 mb-4 d-md-block" style="float: right;">
+                <a class="btn btn-danger btn-MD cta-2 m-4 btnSiguiente" position="1" id="siguiente-1" href="#comenzar"
+                  target="_blank">SIGUIENTE</a>
+              </div>
+
+            </div>
+
+            <!-- Fin Parte 1-->
+
+
+            <!-- Form Parte 2-->
+            <div class="parte-02" id="parte-2">
+              <span class="volver-atras" id="atras-2" position="2">Volver atrás</span>
+              <h5 class="">Datos para el viaje*</h5>
+              <p class=""><strong>*Todos los campos son obligatorios.</strong></p>
+              <div class="row g-0">
+
+                <div class="col-md-6 mb-3 p-3">
+                  <label for="exampleFormControlInput1" class="form-label" style=" width: 100%;">¿Necesito
+                    alojamiento?</label>
+
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Si
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <label class="form-check-label" for="flexCheckChecked">
+                      No
+                    </label>
+                  </div>
+
+                  <div id="necesitoAloja" class="spanError">
+                  </div>
+                </div>
+
+                  <label for="exampleFormControlSelect1" class="form-label">Hora aproximada de salida desde Madrid a
+                    ciudad de origen</label>
+                  <div class="col-md-7 mb-3 p-3">
+                    <div id="nombre" class="spanError">
+                    </div>
+                    <input id="fecha" type="date" class="form-control fecha" placeholder="" name="fecha">
+                  </div>
+                  <div class="col-md-4 mb-3 p-3">
+                    <div id="nombre" class="spanError">
+                    </div>
+                    <select class="form-select" aria-label="Default select example">
+                      <option selected>Seleccione hora</option>
+                      <option value="1">1:00</option>
+                      <option value="2">2:00</option>
+                      <option value="3">3:00</option>
+                      <option value="4">4:00</option>
+                      <option value="5">5:00</option>
+                      <option value="6">6:00</option>
+                      <option value="7">7:00</option>
+                      <option value="8">8:00</option>
+                      <option value="9">9:00</option>
+                      <option value="10">10:00</option>
+                      <option value="11">11:00</option>
+                      <option value="12">12:00</option>
+                      <option value="13">13:00</option>
+                      <option value="14">14:00</option>
+                      <option value="15">15:00</option>
+                      <option value="16">16:00</option>
+                      <option value="17">17:00</option>
+                      <option value="18">18:00</option>
+                      <option value="19">19:00</option>
+                      <option value="20">21:00</option>
+                      <option value="21">22:00</option>
+                      <option value="22">23:00</option>
+                      <option value="23">0:00</option>
+                    </select>
+                  </div>
+
+                <h6>* Si tu equipo no se encuentra en el desplegable, es posible que no se encuentre dentro de los
+                  promocionados.</h6>
+
+                <div class="col-md-10 mb-3 p-3">
+                  <label for="exampleFormControlInput1" class="form-label">Medio de trasnporte</label>
+                  <div id="medioTransporte" class="spanError">
+                  </div>
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected>Seleccione transporte</option>
+                    <option value="1">Ave</option>
+                    <option value="2">Renfe</option>
+                    <option value="3">Bus</option>
+                    <option value="4">Triciclo</option>
+                  </select>
+                </div>
+
+              </div>
+
+              <div class="col-md-8 mb-4 d-md-block" style="float: right;">
+                <a class="btn btn-danger btn-MD cta-2 m-4 btnSiguiente" position="2" id="siguiente-2"
+                  target="_blank">ENVIAR</a>
+              </div>
+
+            </div>
+
+            <!-- Fin Parte 2-->
+
+            <!-- Form Parte 3-->
+
+            <div class="parte-03" id="parte-3">
+              <div class="containerImg">
+                <img src="img/gracias.png" alt="">
+              </div>
+              <h5 class="">Gracias, registro realizado.</h5>
+              <p>¡Te esperamos en el Golf Day de Mitsubishi Electric con Miguel Angel Jimenez!</p>
+            </div>
+
+
+            <!-- Fin Parte 3-->
+
+            <!-- Form Parte 4 Gracias-->
+
+
+            <!-- Fin Parte 4-->
+
+          </form>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Fin Formulario -->
+
+    <!-- Footer Contacto con nosotros -->
+
+    <div class="container-fluid g-0 contacta-con-nosotros" style=" position: relative; margin-top: -200px;
+">
+
+
+    </div>
+
+
+  </main>
+
+  <footer style=" position: relative; margin-top: -200px;
+">
+    <div class="containter-fluid text-center ">
+      <div class="row g-0">
+        <div class="col links">
+          <p><strong>Terminos y Condiciones de Uso <span>|</span> Política de Privacidad <span>|</span> Cookies
+              <span>|</span> Notificaciones Legales</strong>
+        </div>
+      </div>
+    </div>
+    <div class="row g-0 pie">
+      <div class="col-12 col-md-6 p-md-5 p-3 text-center">
+        <p>© 2022 Todos los derechos reservados</p>
+
+      </div>
+      <div class="col-12 col-md-6 p-md-5 p-3 text-center">
+        <p>https://es.mitsubishielectric.com/es/</p>
+
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+  </script>
+
+</body>
+
+</html>
